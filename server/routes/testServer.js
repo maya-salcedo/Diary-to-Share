@@ -1,9 +1,9 @@
-var express = require('express');
-
-var router = express.Router();
+const express = require('express');
+const data = require('../data.js');
+const router = express.Router();
 
 router.get('/', async (req, res, next) => {
-  res.send('API is working properly. I am from server aka backend! Yeah');
+  res.json(data.diaries);
 });
 
 module.exports = router;
