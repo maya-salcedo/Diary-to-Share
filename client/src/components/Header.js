@@ -1,8 +1,14 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const HeaderWrapper = styled.header`
+  background-color: #171717;
+  color: #ededed;
+`;
 
 const Header = () => {
   return (
-    <header>
+    <HeaderWrapper>
       <h1>Diary-to-Share</h1>
       <div>
         <form>
@@ -15,7 +21,7 @@ const Header = () => {
         <h5>Not registered?</h5>
         <button>Sign Up</button>
       </div>
-    </header>
+    </HeaderWrapper>
   );
 };
 
