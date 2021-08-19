@@ -1,10 +1,11 @@
 import HomeScreen from './screens/HomeScreen';
 import './App.css';
+import Header from './screens/Header';
 
 function App() {
   return (
     <div>
-      <header>Learn React</header>
+      <Header></Header>
       <HomeScreen />
     </div>
   );
