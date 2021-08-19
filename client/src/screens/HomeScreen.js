@@ -18,6 +18,7 @@ const HomeScreen = () => {
 
   return (
     <div>
+      <h1>Featured Diaries</h1>
       {info.map((diary) => (
         <div key={diary.title}>
           <h1>{diary.title}</h1>
@@ -26,6 +27,7 @@ const HomeScreen = () => {
           <p>{diary.content3}</p>
         </div>
       ))}
+      <h1>Diary Sharers</h1>
     </div>
   );
 };
