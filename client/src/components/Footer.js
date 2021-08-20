@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const FooterWrapper = styled.footer`
-  background-color: #444444;
+  background-color: #616f39;
 `;
 
 const year = new Date().getFullYear();

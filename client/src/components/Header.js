@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const HeaderWrapper = styled.header`
-  background-color: #171717;
-  color: #ededed;
+  background-color: #616f39;
+  color: #000000;
 `;
 
 const Header = () => {

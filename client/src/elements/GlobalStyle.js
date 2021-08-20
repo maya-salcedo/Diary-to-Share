@@ -12,7 +12,9 @@ const GlobalStyle = createGlobalStyle`
     font-family: Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #012443
+    color: #012443;
+    line-height: 1.8;
+
   }
   #root {
     height: 100%;
