@@ -16,6 +16,7 @@ const HeaderWrapper = styled.header`
     font-size: 4rem;
     margin: 0;
     padding: 0 1.5rem;
+    font-family: 'Euphoria Script', cursive;
   }
   > div {
     align-content: flex-end;
