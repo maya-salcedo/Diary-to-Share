@@ -37,12 +37,14 @@ const GlobalStyle = createGlobalStyle`
   a {
     text-decoration: none;
   }
-  a:hover {
+  ${
+    '' /* a:hover {
     color: #ff8000;
   }
   header a {
     color: #ffffff;
     padding: 1rem;
+  } */
   }
   ul {
     padding: 0;
@@ -74,8 +76,10 @@ const GlobalStyle = createGlobalStyle`
   button:hover {
     border: 0.1rem #222831 solid;
   }
-  img {
+  ${
+    '' /* img {
     border-radius: 0.5rem;
+  } */
   }
 `;
 export default GlobalStyle;

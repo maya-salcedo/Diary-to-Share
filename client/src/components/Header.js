@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const HeaderWrapper = styled.header`
   display: flex;
@@ -9,19 +10,26 @@ const HeaderWrapper = styled.header`
   align-items: auto;
   align-content: start;
   background-color: #000000;
-  color: #a7d129;
-  > img {
-    width: 4rem;
-    height: 100%;
-    margin: auto 1rem;
+  > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  > h1 {
+  & img {
+    width: 4rem;
+    height: 4rem;
+    padding-left: 1.2rem;
+  }
+  & h1 {
+    color: #a7d129;
     flex: 1 0 auto;
-    margin: 1rem;
-    font-size: 4rem;
     margin: 0;
+    font-size: 4rem;
     padding: 0;
     font-family: 'Euphoria Script', cursive;
+    :hover {
+      color: #a3f7bf;
+    }
   }
   > div {
     align-content: flex-end;
@@ -37,8 +45,12 @@ const HeaderWrapper = styled.header`
 const Header = () => {
   return (
     <HeaderWrapper>
-      <img src="/images/logo.png"></img>
-      <h1>Diary-to-Share</h1>
+      <Link to="/">
+        <img src="/images/logo.png"></img>
+      </Link>
+      <Link>
+        <h1>Diary-to-Share</h1>
+      </Link>
       <div>
         <form>
           <input type="search" placeholder="Search keywords"></input>
