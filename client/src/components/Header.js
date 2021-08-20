@@ -57,7 +57,10 @@ const Header = () => {
         </form>
       </div>
       <div>
-        <button>Sign In</button> <button>Sign Up</button>
+        <button>Sign In</button>
+        <Link to="/signup">
+          <button>Sign Up</button>
+        </Link>
       </div>
     </HeaderWrapper>
   );
