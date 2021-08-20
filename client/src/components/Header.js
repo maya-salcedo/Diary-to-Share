@@ -48,7 +48,7 @@ const Header = () => {
       <Link to="/">
         <img src="/images/logo.png"></img>
       </Link>
-      <Link>
+      <Link to="/">
         <h1>Diary-to-Share</h1>
       </Link>
       <div>
