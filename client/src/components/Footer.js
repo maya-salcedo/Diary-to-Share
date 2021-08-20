@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const FooterWrapper = styled.footer`
-  background-color: #616f39;
+  background-color: #000000;
+  color: #a7d129;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
