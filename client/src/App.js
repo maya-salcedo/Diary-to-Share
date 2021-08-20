@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import GlobalStyle from './elements/GlobalStyle';
 import DiaryScreen from './screens/DiaryScreen';
 import SignupScreen from './screens/SignupScreen';
+import SigninScreen from './screens/SigninScreen';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <GlobalStyle />
       <Header></Header>
       <main>
+        <Route path="/signin" component={SigninScreen}></Route>
         <Route path="/signup" component={SignupScreen}></Route>
         <Route path="/diary" component={DiaryScreen}></Route>
         <Route path="/" component={HomeScreen} exact></Route>
