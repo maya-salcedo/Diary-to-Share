@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SignupScreen = () => {
   return (
@@ -25,6 +26,9 @@ const SignupScreen = () => {
         </div>
         <div>
           <button type="submit">Register</button>
+        </div>
+        <div>
+          Already a registed user? <Link to="/signin">Log In</Link>
         </div>
       </form>
     </div>

@@ -45,7 +45,7 @@ const HeaderWrapper = styled.header`
 const Header = () => {
   return (
     <HeaderWrapper>
-      <Link to="/">
+      <Link to="/creatediary">
         <img src="/images/logo.png"></img>
       </Link>
       <Link to="/">
