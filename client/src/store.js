@@ -1,11 +1,12 @@
-import { compose, createStore } from 'redux';
+import { applyMiddleware, combineReducers, compose, createStore } from 'redux';
 import thunk from 'redux-thunk';
+import { diaryListReducer } from './reducers/diaryReducers';
 
 const initialState = {};
 
-const reducer = (state, action) => {
-  return { diaries: x };
-};
+const reducer = combineReducers({
+  diaryList: diaryListReducer,
+});
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
