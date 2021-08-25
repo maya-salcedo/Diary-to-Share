@@ -4,11 +4,21 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var cors = require('cors');
+var mongoose = require('mongoose');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var testServerRouter = require('./routes/testServer');
 
 var app = express();
+
+mongoose.connect(
+  'process.env.MONGODB_URL || mongodb://localhost/diarytoshare',
+  {
+    userNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+  }
+);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
