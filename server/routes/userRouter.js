@@ -2,9 +2,9 @@ const express = require('express');
 const expressAsyncHandler = require('express-async-handler');
 const User = require('../models/userModel.js');
 
-const usersRouter = express.Router();
+const userRouter = express.Router();
 
-usersRouter.post(
+userRouter.post(
   '/signup',
   expressAsyncHandler(async (req, res) => {
     const user = new User({
@@ -20,3 +20,5 @@ usersRouter.post(
     });
   })
 );
+
+module.exports = userRouter;

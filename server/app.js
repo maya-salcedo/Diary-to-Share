@@ -12,14 +12,13 @@ const userRouter = require('./routes/userRouter');
 
 var app = express();
 
-mongoose.connect(
-  'process.env.MONGODB_URL || mongodb://localhost/diarytoshare',
-  {
-    userNewUrlParser: true,
+mongoose
+  .connect('mongodb://localhost/diarytoshare', {
+    useNewUrlParser: true,
     useUnifiedTopology: true,
-    useCreateIndex: true,
-  }
-);
+  })
+  .then(() => console.log('connect'))
+  .catch((error) => console.error(error.message));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
