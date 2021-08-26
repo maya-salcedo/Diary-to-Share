@@ -48,4 +48,4 @@ const data = {
   ],
 };
 
-module.exports = data;
+export default data;

@@ -1,6 +1,6 @@
-const express = require('express');
-const expressAsyncHandler = require('express-async-handler');
-const User = require('../models/userModel.js');
+import express from 'express';
+import expressAsyncHandler from 'express-async-handler';
+import User from '../models/userModel.js';
 
 const userRouter = express.Router();
 
@@ -21,4 +21,4 @@ userRouter.post(
   })
 );
 
-module.exports = userRouter;
+export default userRouter;

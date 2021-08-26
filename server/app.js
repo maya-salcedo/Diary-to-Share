@@ -1,16 +1,16 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
-var cors = require('cors');
-var mongoose = require('mongoose');
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var testServerRouter = require('./routes/testServer');
-const userRouter = require('./routes/userRouter');
+import createError from 'http-errors';
+import express from 'express';
+import path from 'path';
+import cookieParser from 'cookie-parser';
+import logger from 'morgan';
+import cors from 'cors';
+import mongoose from 'mongoose';
+import indexRouter from './routes/index';
+import usersRouter from './routes/users';
+import testServerRouter from './routes/testServer';
+import userRouter from './routes/userRouter';
 
-var app = express();
+const app = express();
 
 mongoose
   .connect('mongodb://localhost/diarytoshare', {
@@ -52,4 +52,4 @@ app.use(function (err, req, res, next) {
   res.render('error');
 });
 
-module.exports = app;
+export default app;
