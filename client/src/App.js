@@ -1,7 +1,6 @@
 import HomeScreen from './screens/HomeScreen';
 import './App.css';
 import { BrowserRouter, Route } from 'react-router-dom';
-import Header from './components/Header';
 
 import GlobalStyle from './elements/GlobalStyle';
 import DiaryScreen from './screens/DiaryScreen';
@@ -9,12 +8,13 @@ import SignupScreen from './screens/SignupScreen';
 import SigninScreen from './screens/SigninScreen';
 import CreateDiary from './screens/CreateDiary';
 import { FooterContainer } from './container/footer';
+import { HeaderContainer } from './container/header';
 
 function App() {
   return (
     <BrowserRouter>
       <GlobalStyle />
-      <Header></Header>
+      <HeaderContainer />
       <main>
         <Route path="/creatediary" component={CreateDiary}></Route>
         <Route path="/signin" component={SigninScreen}></Route>
