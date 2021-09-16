@@ -42,68 +42,7 @@ export const TitleLink = styled(ReachRouterLink)`
   }
 `;
 
-export const Column = styled.div`
-  .switch-holder {
-    display: flex;
-    padding: 10px 20px;
-    border-radius: 10px;
-    margin: 1rem;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .switch-label {
-    width: 4rem;
-    font-size: 0.7rem;
-    margin-top: 0.5rem;
-  }
-  .switch-toggle {
-    height: 2rem;
-  }
-
-  .switch-toggle input[type='checkbox'] {
-    position: absolute;
-    opacity: 0;
-    z-index: -2;
-  }
-
-  .switch-toggle input[type='checkbox'] + label {
-    position: relative;
-    display: inline-block;
-    width: 100px;
-    height: 40px;
-    border-radius: 20px;
-    margin: 0;
-    cursor: pointer;
-    box-shadow: inset -8px -8px 15px rgba(255, 255, 255, 0.6),
-      inset 10px 10px 10px rgba(0, 0, 0, 0.25);
-  }
-
-  .switch-toggle input[type='checkbox'] + label::before {
-    position: absolute;
-    content: 'OFF';
-    font-size: 13px;
-    text-align: center;
-    line-height: 25px;
-    top: 8px;
-    left: 8px;
-    width: 45px;
-    height: 25px;
-    border-radius: 20px;
-    background-color: #d1dad3;
-    box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.5),
-      3px 3px 5px rgba(0, 0, 0, 0.25);
-    transition: 0.3s ease-in-out;
-  }
-
-  .switch-toggle input[type='checkbox']:checked + label::before {
-    left: 50%;
-    content: 'ON';
-    color: #fff;
-    background-color: #00b33c;
-    box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.5), 3px 3px 5px #00b33c;
-  }
-`;
+export const Column = styled.div``;
 
 export const ButtonLink = styled(ReachRouterLink)`
   background-color: #01b0d3;
@@ -137,5 +76,65 @@ export const ButtonToggle = styled.button`
   &.dark {
     background-color: gray;
     color: #a7d129;
+  }
+`;
+
+export const Toggle = styled.div`
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 1rem;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const ToggleLabel = styled.div`
+  width: 4rem;
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+`;
+
+export const ToggleSwitch = styled.div`
+  height: 2rem;
+
+  > input {
+    position: absolute;
+    opacity: 0;
+    z-index: -2;
+  }
+  > label {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 0;
+    cursor: pointer;
+    box-shadow: inset -8px -8px 15px rgba(255, 255, 255, 0.6),
+      inset 10px 10px 10px rgba(0, 0, 0, 0.25);
+  }
+  > label::before {
+    position: absolute;
+    content: 'OFF';
+    font-size: 13px;
+    text-align: center;
+    line-height: 25px;
+    top: 8px;
+    left: 8px;
+    width: 45px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: #d1dad3;
+    box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.5),
+      3px 3px 5px rgba(0, 0, 0, 0.25);
+    transition: 0.3s ease-in-out;
+  }
+
+  > input:checked + label::before {
+    left: 50%;
+    content: 'ON';
+    color: #fff;
+    background-color: #00b33c;
+    box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.5), 3px 3px 5px #00b33c;
   }
 `;

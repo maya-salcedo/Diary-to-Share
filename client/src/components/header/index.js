@@ -8,6 +8,9 @@ import {
   Logo,
   Row,
   TitleLink,
+  Toggle,
+  ToggleLabel,
+  ToggleSwitch,
 } from './styles/header';
 
 export default function Header({ children, ...restProps }) {
@@ -40,4 +43,16 @@ Header.ButtonLink = function HeaderButtonLink({ children, ...restProps }) {
 
 Header.ButtonToggle = function HeaderButtonToggle({ children, ...restProps }) {
   return <ButtonToggle {...restProps}>{children}</ButtonToggle>;
+};
+
+Header.Toggle = function HeaderToggle({ children, ...restProps }) {
+  return <Toggle {...restProps}>{children}</Toggle>;
+};
+
+Header.ToggleLabel = function HeaderToggleLabel({ children, ...restProps }) {
+  return <ToggleLabel {...restProps}>{children}</ToggleLabel>;
+};
+
+Header.ToggleSwitch = function HeaderToggleSwitch({ children, ...restProps }) {
+  return <ToggleSwitch {...restProps}>{children}</ToggleSwitch>;
 };

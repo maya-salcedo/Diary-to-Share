@@ -21,15 +21,15 @@ export function HeaderContainer() {
           </Header.ButtonToggle>
         </Header.Column> */}
         <Header.Column>
-          <div class="switch-holder">
-            <div class="switch-label">
+          <Header.Toggle>
+            <Header.ToggleLabel>
               <span>Dark mode</span>
-            </div>
-            <div class="switch-toggle">
-              <input type="checkbox" id="bluetooth" />
-              <label for="bluetooth"></label>
-            </div>
-          </div>
+            </Header.ToggleLabel>
+            <Header.ToggleSwitch>
+              <input type="checkbox" id="darkmodetoggle" />
+              <label for="darkmodetoggle"></label>
+            </Header.ToggleSwitch>
+          </Header.Toggle>
         </Header.Column>
       </Header.Row>
       <Header.Row>
