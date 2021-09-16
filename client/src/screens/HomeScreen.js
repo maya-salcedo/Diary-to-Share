@@ -3,6 +3,7 @@ import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
 import { useDispatch, useSelector } from 'react-redux';
 import { listDiaries } from '../actions/diaryActions';
+import { HeaderContainer } from '../container/header';
 
 const HomeScreen = () => {
   const dispatch = useDispatch();
@@ -16,6 +17,7 @@ const HomeScreen = () => {
 
   return (
     <div>
+      <HeaderContainer />
       <h1>Featured Diaries</h1>
       {loading ? (
         <LoadingBox></LoadingBox>
