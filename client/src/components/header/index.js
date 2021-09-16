@@ -2,7 +2,6 @@ import React from 'react';
 import { Link as ReachRouterLink } from 'react-router-dom';
 import {
   ButtonLink,
-  ButtonToggle,
   Column,
   Container,
   Logo,
@@ -39,10 +38,6 @@ Header.Column = function HeaderColumn({ children, ...restProps }) {
 
 Header.ButtonLink = function HeaderButtonLink({ children, ...restProps }) {
   return <ButtonLink {...restProps}>{children}</ButtonLink>;
-};
-
-Header.ButtonToggle = function HeaderButtonToggle({ children, ...restProps }) {
-  return <ButtonToggle {...restProps}>{children}</ButtonToggle>;
 };
 
 Header.Toggle = function HeaderToggle({ children, ...restProps }) {

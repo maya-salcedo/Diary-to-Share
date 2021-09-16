@@ -8,9 +8,13 @@ export const Container = styled.div`
   justify-content: space-around;
   align-items: auto;
   align-content: start;
-  background-color: #242333;
-  color: #ffffff;
   padding-bottom: 2rem;
+  background-color: #01b0d3;
+  color: #ffffff;
+
+  &.dark {
+    background-color: #242333;
+  }
 `;
 
 export const Row = styled.div`
@@ -26,6 +30,11 @@ export const Logo = styled.img`
   width: 2.5rem;
   height: 2.5rem;
   padding: 2.2rem 1rem 2.2rem 2.2rem;
+  opacity: 0.6;
+
+  &:hover {
+    opacity: 1;
+  }
 `;
 
 export const TitleLink = styled(ReachRouterLink)`
@@ -38,6 +47,14 @@ export const TitleLink = styled(ReachRouterLink)`
   font-family: 'Euphoria Script', cursive;
 
   &:hover {
+    color: #242333;
+  }
+
+  &.dark {
+    color: #ffffff;
+  }
+
+  &.dark:hover {
     color: #01b0d3;
   }
 `;
@@ -45,8 +62,8 @@ export const TitleLink = styled(ReachRouterLink)`
 export const Column = styled.div``;
 
 export const ButtonLink = styled(ReachRouterLink)`
-  background-color: #01b0d3;
-  color: #242333;
+  background-color: #242333;
+  color: #ffffff;
   opacity: 0.8;
   border-radius: 0.2rem;
   text-decoration: none;
@@ -57,25 +74,9 @@ export const ButtonLink = styled(ReachRouterLink)`
   &:hover {
     opacity: 1;
   }
-`;
-
-export const ButtonToggle = styled.button`
-  border-radius: 4px;
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0 0 12px;
-  padding: 16px;
-  border: 0;
-  cursor: pointer;
-
-  &.light {
-    background-color: #a7d129;
-    color: gray;
-  }
 
   &.dark {
-    background-color: gray;
-    color: #a7d129;
+    background-color: #01b0d3;
   }
 `;
 
