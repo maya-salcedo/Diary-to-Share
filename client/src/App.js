@@ -8,13 +8,11 @@ import SignupScreen from './screens/SignupScreen';
 import SigninScreen from './screens/SigninScreen';
 import CreateDiary from './screens/CreateDiary';
 import { FooterContainer } from './container/footer';
-import { HeaderContainer } from './container/header';
 
 function App() {
   return (
     <BrowserRouter>
       <GlobalStyle />
-      <HeaderContainer />
       <main>
         <Route path="/creatediary" component={CreateDiary}></Route>
         <Route path="/signin" component={SigninScreen}></Route>

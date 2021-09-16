@@ -3,28 +3,34 @@ import { Link as ReachRouterLink } from 'react-router-dom';
 
 export const Container = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: auto;
   align-content: start;
-  background-color: #000000;
+  background-color: #242333;
+  color: #ffffff;
+  padding-bottom: 2rem;
 `;
 
-export const Link = styled.a`
+export const Row = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: auto;
+  align-content: start;
 `;
 
 export const Logo = styled.img`
   width: 4rem;
   height: 4rem;
-  padding-left: 1.2rem;
+  padding: 1.2rem;
 `;
 
 export const TitleLink = styled(ReachRouterLink)`
-  color: #a7d129;
+  color: #ffffff;
+  text-decoration: none;
   flex: 1 0 auto;
   margin: 0;
   font-size: 4rem;
@@ -32,20 +38,25 @@ export const TitleLink = styled(ReachRouterLink)`
   font-family: 'Euphoria Script', cursive;
 
   &:hover {
-    color: #a3f7bf;
+    color: #01b0d3;
   }
 `;
 
-export const Column = styled.div`
-  align-content: flex-end;
-  max-width: 30vw;
-  margin: auto 1rem;
-`;
+export const Column = styled.div``;
 
 export const ButtonLink = styled(ReachRouterLink)`
-  background-color: #a7d129;
-  border-radius: 1rem;
-  width: 1rem;
+  background-color: #01b0d3;
+  color: #242333;
+  opacity: 0.8;
+  border-radius: 0.2rem;
+  text-decoration: none;
+  padding: 0.5rem 0.8rem;
+  margin: 0.2rem;
+  font-size: 1rem;
+
+  &:hover {
+    opacity: 1;
+  }
 `;
 
 export const ButtonToggle = styled.button`

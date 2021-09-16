@@ -5,8 +5,8 @@ import {
   ButtonToggle,
   Column,
   Container,
-  Link,
   Logo,
+  Row,
   TitleLink,
 } from './styles/header';
 
@@ -14,20 +14,20 @@ export default function Header({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
 }
 
-Header.Link = function HeaderLink({ children, ...restProps }) {
-  return <Link {...restProps}>{children}</Link>;
-};
-
 Header.Logo = function HeaderLogo({ to, ...restProps }) {
   return (
     <ReachRouterLink to={to}>
-      <Logo {...restProps} />;
+      <Logo {...restProps} />
     </ReachRouterLink>
   );
 };
 
 Header.TitleLink = function HeaderTitleLink({ children, ...restProps }) {
   return <TitleLink {...restProps}>{children}</TitleLink>;
+};
+
+Header.Row = function HeaderRow({ children, ...restProps }) {
+  return <Row {...restProps}>{children}</Row>;
 };
 
 Header.Column = function HeaderColumn({ children, ...restProps }) {
