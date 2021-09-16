@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Link as ReachRouterLink } from 'react-router-dom';
 
-export const Container = styled.header`
+export const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -46,4 +46,24 @@ export const ButtonLink = styled(ReachRouterLink)`
   background-color: #a7d129;
   border-radius: 1rem;
   width: 1rem;
+`;
+
+export const ButtonToggle = styled.button`
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 12px;
+  padding: 16px;
+  border: 0;
+  cursor: pointer;
+
+  &.light {
+    background-color: #a7d129;
+    color: gray;
+  }
+
+  &.dark {
+    background-color: gray;
+    color: #a7d129;
+  }
 `;
