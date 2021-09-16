@@ -23,9 +23,9 @@ export const Row = styled.div`
 `;
 
 export const Logo = styled.img`
-  width: 4rem;
-  height: 4rem;
-  padding: 1.2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 2.2rem 1rem 2.2rem 2.2rem;
 `;
 
 export const TitleLink = styled(ReachRouterLink)`

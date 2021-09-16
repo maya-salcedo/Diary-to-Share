@@ -11,7 +11,7 @@ export function HeaderContainer() {
       <Header.Row>
         <Header.Logo
           to="/creatediary"
-          src="/images/logo.png"
+          src="/images/logo-light-background.png"
           alt="Diary-to-Share"
         />
         <Header.TitleLink>Diary-to-Share</Header.TitleLink>
